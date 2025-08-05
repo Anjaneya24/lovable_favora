@@ -1,87 +1,73 @@
-### **Use Case: Location-Based Offer Discovery Platform (JSON-Driven)**
+# Welcome to your Lovable project
 
-#### **Objective**
-Build a web application that delivers personalized offers and recommendations based on the user's current location or searched address. Offers may include:
-- Mall promotions  
-- Salon and spa discounts  
-- Gym memberships or trial offers  
-- Favorite food deals  
-- Must-visit local attractions  
+## Project info
 
-#### **Technology Stack**
-- **Frontend**: React.js  
-  - Responsive UI for browsing offers  
-  - Search box for entering location or address manually  
-  - Map integration to visualize nearby deals  
+**URL**: https://lovable.dev/projects/bf883b70-988c-43eb-b1f0-6bd2f18d49e0
 
-- **Backend**: Python (Flask)  
-  - Handles API requests and business logic  
-  - Processes location data and user preferences  
-  - Reads and writes offer data from **JSON files** instead of a database  
+## How can I edit this code?
 
-- **LLM Integration**:  
-  - Understands user queries in natural language (e.g., “Show me food deals near Banjara Hills”)  
-  - Generates personalized suggestions and summaries  
-  - Handles ambiguous or conversational inputs  
+There are several ways of editing your application.
 
-#### **Data Storage**
-- **Offers JSON File**: Stores all available offers with fields like:
-  ```json
-  {
-    "offers": [
-      {
-        "id": "001",
-        "title": "50% off at XYZ Mall",
-        "category": "mall",
-        "location": "Banjara Hills",
-        "coordinates": [17.4123, 78.4485],
-        "valid_until": "2025-08-10"
-      },
-      ...
-    ]
-  }
-  ```
+**Use Lovable**
 
-- **Agents JSON File**: Stores agent addresses or locations:
-  ```json
-  {
-    "agents": [
-      {
-        "id": "A001",
-        "name": "Mall Agent",
-        "location": "Gachibowli",
-        "coordinates": [17.4445, 78.3772]
-      },
-      ...
-    ]
-  }
-  ```
+Simply visit the [Lovable Project](https://lovable.dev/projects/bf883b70-988c-43eb-b1f0-6bd2f18d49e0) and start prompting.
 
-#### **Key Features**
-1. **Location Detection**
-   - Auto-detect user location via GPS  
-   - Manual location/address input via search box  
+Changes made via Lovable will be committed automatically to this repo.
 
-2. **Offer Aggregation**
-   - Load offers from JSON file  
-   - Filter based on proximity and user preferences  
+**Use your preferred IDE**
 
-3. **Personalization via LLM**
-   - Interpret user intent from natural language  
-   - Recommend offers based on past behavior or stated interests  
-   - Summarize offers in a conversational tone  
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-4. **User Interaction**
-   - Save favorite offers  
-   - Share deals with others  
-   - View offer details and redemption instructions  
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-5. **Admin Panel (Optional)**
-   - Upload and manage offers via JSON editor or form  
-   - Monitor user engagement and feedback  
+Follow these steps:
 
-#### **Benefits**
-- **Convenience**: Users get relevant offers without searching multiple platforms  
-- **Personalization**: LLM tailors suggestions to individual preferences  
-- **Efficiency**: JSON-based storage simplifies setup and reduces overhead  
-- **Scalability**: Modular architecture supports expansion to new cities or categories  
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+**Edit a file directly in GitHub**
+
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/bf883b70-988c-43eb-b1f0-6bd2f18d49e0) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
